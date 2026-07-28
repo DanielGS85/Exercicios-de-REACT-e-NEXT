@@ -1,35 +1,36 @@
-import Titulo from "@/components/Titulo";
-import Footer from '@/components/Footer';
+import Header from "@/components/Header";
+import Contador from '@/components/Contador';
 import CartaoPerfil from './../components/CartaoPerfil';
+import Titulo from "@/components/Titulo";
+import CartaoPerfeil1 from "./../components/CartaoPerfil1";
 import Soma from '@/components/Soma';
 import VariavelNome from '@/components/VariavelNome'
 import NomeCurso from './../components/NomeCurso';
-import CartaoPerfeil1 from "./../components/CartaoPerfil1";
 import ImgAluno from '@/components/ImgAluno';
-import Header from "@/components/Header";
-import Contador from '@/components/Contador';
 import SecaoTurma from '@/components/SecaoTurma';
+import Footer from '@/components/Footer';
 
 
 export default function home() {
   return (
     <div>
-      <Titulo/>
+      {/* <Titulo/> */}
       <div>
         <Header/>
         <div>
+        <Contador />
         <ImgAluno />
         </div>
+        {/* aqui vão os cards dos alunos */}
         <CartaoPerfeil1/>
         <CartaoPerfil />
         <CartaoPerfil />
-        <Contador />
+        <CartaoPerfil />
         <SecaoTurma/>
         <div>
           <>
-
               <h3 className="text-xl font-bold text-amber-50">Daniel Guimares</h3>
-                  <p className="text-fuchsia-600">Back-end</p>
+              <p className="text-fuchsia-600">Back-end</p>
             </>
         </div>      
       </div>
