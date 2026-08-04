@@ -1,29 +1,24 @@
-import Container from '../components/lista01/Container';
-import HeaderPrinc from '../components/homePrincipal/HeaderPrinc';
-import BotaoLst01 from '../components/homePrincipal/BotaoLst01';
-import Footer from '../components/lista01/Footer';
+import Container from "../components/lista01/Container";
+import Header from "../components/homePrincipal/Header";
+import BotaoLista from "../components/homePrincipal/BotaoLista";
+import Footer from "../components/homePrincipal/Footer"
 
-
-
-export default function home(){
-
-    return (
-
-        <Container>
-      <div>
-        <HeaderPrinc/>
-        <div>
-            <BotaoLst01/>
-        <div>
-        <section className="flex flex-wrap justify-center gap-5">
-        </section>
-        </div>      
+export default function home() {
+  return (
+    <Container>
+      <div className="flex flex-col flex-1">
+        <Header />
+        <div className="flex justify-center gap-5 w-full">
+          <BotaoLista href="/lista1" texto="Lista 1" />
+          <BotaoLista href="/lista2" texto="Lista 2" />
+          <BotaoLista href="/lista3" texto="Lista 3" />
+          <BotaoLista href="/lista4" texto="Lista 4" />
+        </div>
+          <div>
+            <section className="flex flex-wrap justify-center gap-5"></section>
+          </div>
+          <Footer/>
       </div>
-      <div>
-      <Footer />
-      </div>
-    </div>
     </Container>
-
-    );
+  );
 }

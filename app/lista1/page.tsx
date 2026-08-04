@@ -13,7 +13,7 @@ import Footer from '../../components/lista01/Footer';
 export default function Lista1(){
   return (
     <Container>
-    <div>
+    <div className="flex flex-col flex-1">
       <div>
         <Header/>
         <div>
@@ -30,14 +30,13 @@ export default function Lista1(){
         <CartaoPerfil4 />
         </section>
         </div>      
-      </div>
-      <div>
+      </div> 
       <Footer />
-      </div>
     </div>
     </Container>
   );
 }
+
 
 
 

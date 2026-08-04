@@ -1,6 +1,6 @@
-export default function HeaderPrinc() {
+export default function Header() {
   return (
-    <headerP className=" 
+    <header className=" 
           {/* aqui vão os cards dos alunos */}
     w-4/5  
     mt-10 mx-auto 
@@ -18,6 +18,6 @@ export default function HeaderPrinc() {
         <a href="#"><h1></h1></a>
         <a href="#"><h1></h1></a>
       </nav>
-    </headerP>
+    </header>
   );
 }
