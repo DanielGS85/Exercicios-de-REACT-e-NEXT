@@ -1,14 +1,14 @@
-import Container from "../../components/curriculosm/Container"
+import Container from "../../components/curriculosm/Container";
 import Header from '../../components/curriculosm/Header';
-import FotoPerfil from '../../components/curriculosm/FotoPerfil'
+// import FotoPerfil from "../../public/imagens/223539475.jpg";
 
 export default function CurriculoSobreMin() {
     return (
         <Container>
             <div>
                 <Header />
-                {/* <FotoPerfil/> */}
+
             </div>
         </Container>
- );
+    );
 }

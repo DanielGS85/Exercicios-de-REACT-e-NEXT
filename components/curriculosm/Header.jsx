@@ -1,3 +1,6 @@
+import Link from "next/link";
+import FotoPerfil from "./FotoPerfil";
+
 export default function Header() {
   return (
     <header className="
@@ -6,20 +9,21 @@ export default function Header() {
       mt-20
       mx-auto      
       p-5     
-    bg-amber-50
+      bg-amber-50
       flex 
       flex-col 
       shadow-lg
     ">
-      
-      <nav className="text-1xl mt-5 flex justify-center gap-6">
-        <a href="#"><h1></h1></a>
-        <a href="#"><h1></h1></a>
+      <FotoPerfil />
+
+      <nav className=" w-12 bg-emerald-500 flex justify-center text-1xl mt-5  gap-6">
+                <Link href="/">
+          <h1>Início</h1>
+        </Link>
       </nav>
     </header>
   );
 }
-
 
 // bg-white: Deixa o fundo branco igual ao modelo da imagem (em vez de amber-100).
 
