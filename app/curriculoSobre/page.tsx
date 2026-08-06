@@ -7,7 +7,9 @@ export default function CurriculoSobreMin() {
         <Container>
             <div>
                 <Header />
-
+                <div>
+                    
+                </div>
             </div>
         </Container>
     );

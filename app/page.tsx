@@ -13,15 +13,21 @@ export default function home() {
           <BotaoLista href="/lista2" texto="Lista 2" />
           <BotaoLista href="/lista3" texto="Lista 3" />
           <BotaoLista href="/lista4" texto="Lista 4" />
-          <div className="">
-          <BotaoLista href="/curriculoSobre" texto="curriculo"/>
-          </div>
+          <BotaoLista href="/curriculoSobre" texto="curriculo" />
         </div>
           <div>
-            <section className="flex flex-wrap justify-center gap-5"></section>
+          {/* <section className="flex flex-wrap justify-center gap-5"></section> */}
+          <div className="">
+          <BotaoLista href="/formularioEnd" texto="Formulario" />
+          </div>
           </div>
           <Footer/>
       </div>
     </Container>
   );
 }
+
+
+{/* <div className="">
+          <BotaoLista href="/curriculoSobre" texto="curriculo"/>
+          </div> */}
