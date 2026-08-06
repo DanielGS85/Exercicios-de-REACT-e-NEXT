@@ -1,4 +1,4 @@
-export default function FormacoesTecnicas() {
+export default function FormacoesTec() {
   const cursos = [
     { id: 1, nome: "Soldador nos processos MIG/MAG", inicio: "Jan 2020", termino: "Jun 2020" },
     { id: 2, nome: "Eletrodo", inicio: "Jul 2020", termino: "Dez 2020" },
@@ -10,30 +10,30 @@ export default function FormacoesTecnicas() {
 
   return (
     // ESTILIZAR AQUI: card padrão (bg-white, rounded-2xl, shadow-md, p-6, mb-6, overflow-x-auto para responsividade na tabela)
-    <div className="">
+    <div className="bg-white rounded-2xl shadow-md p-6 mb-6 overflow-x-auto para responsividade na tabela">
       {/* ESTILIZAR AQUI: título da seção (text-2xl, font-bold, text-slate-800, mb-4) */}
-      <h2 className="">Formações Técnicas</h2>
+      <h2 className="text-2xl font-bold text-slate-800 mb-4">Formações Técnicas</h2>
 
       {/* ESTILIZAR AQUI: largura total da tabela (w-full text-left border-collapse) */}
-      <table className="">
+      <table className="w-full text-left border-collapse">
         {/* ESTILIZAR AQUI: cabeçalho da tabela (bg-slate-100 text-slate-700 uppercase text-sm font-semibold) */}
-        <thead className="">
+        <thead className="bg-slate-100 text-slate-700 uppercase text-sm font-semibold">
           <tr>
             {/* ESTILIZAR AQUI: padding nas células do topo (py-3 px-4 border-b) */}
-            <th className="">Curso</th>
-            <th className="">Início</th>
-            <th className="">Término</th>
+            <th className="py-3 px-4 border-b">Curso</th>
+            <th className="py-3 px-4 border-b">Início</th>
+            <th className="py-3 px-4 border-b">Término</th>
           </tr>
         </thead>
         {/* ESTILIZAR AQUI: divisor entre linhas (divide-y divide-slate-200 text-slate-600) */}
-        <tbody className="">
+        <tbody className="divide-y divide-slate-200 text-slate-600">
           {cursos.map((curso) => (
             // ESTILIZAR AQUI: efeito hover na linha (hover:bg-slate-50 transition)
-            <tr key={curso.id} className="">
+            <tr key={curso.id} className="hover:bg-slate-50 transition">
               {/* ESTILIZAR AQUI: padding nas células de conteúdo (py-3 px-4) */}
-              <td className="">{curso.nome}</td>
-              <td className="">{curso.inicio}</td>
-              <td className="">{curso.termino}</td>
+              <td className="py-3 px-4">{curso.nome}</td>
+              <td className="py-3 px-4">{curso.inicio}</td>
+              <td className="py-3 px-4">{curso.termino}</td>
             </tr>
           ))}
         </tbody>

@@ -3,22 +3,38 @@ import FotoPerfil from "./FotoPerfil";
 
 export default function Header() {
   return (
-    <header className="
-      w-120
-      h-180
-      mt-20
-      mx-auto      
-      p-5     
-      bg-amber-50
+    <header
+      className="  
+      w-180
+      py-5   
+      bg-amber-100
+      relative
       flex 
-      flex-col 
+      flex-col
       shadow-lg
-    ">
+      rounded-3xl
+    "
+    >
       <FotoPerfil />
-
-      <nav className=" w-12 bg-emerald-500 flex justify-center text-1xl mt-5  gap-6">
-                <Link href="/">
-          <h1>Início</h1>
+      <nav
+        className="
+       absolute
+       top-1
+       left-5
+    "
+      >
+        <Link
+          href="/"
+          className="w-24
+      
+            bg-emerald-500
+            text-white
+            flex
+            items-center
+            justify-center
+            rounded-3xl"
+        >
+          <h1 className="text-sm">Início</h1>
         </Link>
       </nav>
     </header>
@@ -39,14 +55,12 @@ export default function Header() {
 
 // relative: Permite posicionar a foto redonda de forma absoluta em relação a essa caixa.
 
-
-
 //  estilizacao do conteiner
 //       w-full
 //       min-h-screen
 //       mx-auto
 //       p-5
 //       bg-blue-300
-//       flex 
-//       flex-col 
+//       flex
+//       flex-col
 //       shadow-lg

@@ -1,17 +1,18 @@
 export default function InformacoesPessoais() {
-  return (
+  return (   // lembrar de comnetar os testes de estilizacao
+
     // ESTILIZAR AQUI: container principal (bg-white, rounded-2xl, shadow-md, p-6, mb-6)
-    <div className="">
+    <div className="bg-white text-mauve-950 rounded-2xl shadow-md p-6 mb-6">
       {/* ESTILIZAR AQUI: título da seção (text-2xl, font-bold, text-slate-800, border-b, pb-2, mb-4) */}
-      <h2 className="">Informações Pessoais</h2>
+      <h2 className="text-2xl font-bold text-slate-800 border-b pb-2 mb-4">Informações Pessoais</h2>
 
       {/* ESTILIZAR AQUI: usar flexbox ou grid para colocar a lista e a foto lado a lado (flex flex-col md:flex-row justify-between items-center gap-6) */}
-      <div className="">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         {/* ESTILIZAR AQUI: espaçamento entre os itens da lista (space-y-2, text-slate-700) */}
         <ul className="">
           <li>
             {/* ESTILIZAR AQUI: destaque no rótulo (font-semibold text-slate-900) */}
-            <strong className="">Nome: </strong> 
+            <strong className="font-semibold text-slate-900">Nome: </strong> 
             Daniel Guimaraes
           </li>
           <li>
@@ -19,7 +20,7 @@ export default function InformacoesPessoais() {
             daniel@mail.com
           </li>
           <li>
-            <strong className="">GitHub: </strong>
+            <strong className="inline-block bg-slate-900 text-white px-3 py-1 rounded-lg hover:bg-slate-700 transition">GitHub: </strong>
             {/* ESTILIZAR AQUI: transformar o link em visual de botão (inline-block bg-slate-900 text-white px-3 py-1 rounded-lg hover:bg-slate-700 transition) */}
             <a 
               href="https://github.com/DanielGS85" 

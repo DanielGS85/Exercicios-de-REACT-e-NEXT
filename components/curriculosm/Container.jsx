@@ -1,7 +1,7 @@
 export default function Container({ children }) {
   return (
     <div className="
-      w-full
+      max-w-5xl
       min-h-screen
       mx-auto
       p-5
