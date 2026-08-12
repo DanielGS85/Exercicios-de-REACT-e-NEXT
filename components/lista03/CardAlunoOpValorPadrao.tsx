@@ -1,6 +1,4 @@
-type AlunoProps ={ nome: string; nota:number;}
-
-export function CardAlunoNota({nome, nota}: AlunoProps){
+export default function CardAlunoOpValorPadrao({nome, curso="Front-End"}: {nome: string; curso?: string;}){
   return (
     <div className="
       w-45
@@ -11,7 +9,7 @@ export function CardAlunoNota({nome, nota}: AlunoProps){
       text-center
       shadow-lg">
         <p className="text-xl font-bold text-slate-800">{nome}</p>
-        <p className="text-slate-800">{nota}</p>
+        <p className="text-slate-800">{curso}</p>
     </div>
   )
 

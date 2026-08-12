@@ -4,7 +4,7 @@ type AlunoProps = { nome: string };
 export function CardAluno({ nome }: AlunoProps) {
   return (
     <div className="
-      w-4/28
+      w-45
       m-5
       bg-fuchsia-500
       rounded-3xl

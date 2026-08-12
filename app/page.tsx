@@ -17,7 +17,7 @@ export default function home() {
         </div>
           <div>
           {/* <section className="flex flex-wrap justify-center gap-5"></section> */}
-          <div className="">
+          <div className="flex flex-wrap justify-center gap-5">
           <BotaoLista href="/formularioEnd" texto="Formulario" />
           </div>
           </div>
