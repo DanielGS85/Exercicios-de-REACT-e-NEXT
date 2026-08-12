@@ -1,7 +1,7 @@
 function CartaoPerfil5({ nome, curso, nota }) {
   return (
     <div className="
- bg-white 
+   bg-white 
     rounded-2xl
     p-6 
     shadow-lg 
