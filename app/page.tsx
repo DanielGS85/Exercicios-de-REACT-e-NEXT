@@ -14,6 +14,7 @@ export default function home() {
           <BotaoLista href="/lista3" texto="Lista 3" />
           <BotaoLista href="/lista4" texto="Lista 4" />
           <BotaoLista href="/curriculoSobre" texto="curriculo" />
+          <BotaoLista href="/calculadora" texto="Calculadora"/>
         </div>
           <div>
           {/* <section className="flex flex-wrap justify-center gap-5"></section> */}
