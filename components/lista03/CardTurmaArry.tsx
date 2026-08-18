@@ -5,9 +5,9 @@ type Aluno = {
 
 export default function CardTurmaArry() {
 const turma: Aluno[] = [
-  { id: 1, nome: "Ana" },
+  { id: 1, nome: "Daniel" },
   { id: 2, nome: "Daniel" },
-  { id: 3, nome: "Maria" },
+  { id: 3, nome: "Daniel" },
  ];
 
  return (

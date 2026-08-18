@@ -33,7 +33,7 @@ export function Calculadora () {
         } else {
             //Identificar qual operador e
             switch(num) {
-                case "/" : setNum1(visor); setOperador("/");
+                case "/" : setNum1(visor); setOperador("/");  // logica de calculo
                 break;
                 case "x" : setNum1(visor); setOperador("/");
                 break;

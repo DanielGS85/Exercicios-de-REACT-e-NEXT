@@ -10,7 +10,11 @@ import CardAlunoOpValorPadrao from '@/components/lista03/CardAlunoOpValorPadrao'
 import { PainelTipado } from '@/components/lista03/PainelTipado';
 import CardAlunoObjeto from '@/components/lista03/CardAlunoObjeto';
 import CardTurmaArry from '@/components/lista03/CardTurmaArry';
+import CardUniaoLiterais from '@/components/lista03/CardUniaoLiterais';
+import CardPropUnion from '@/components/lista03/CardPropUnion';
+import CardArrayStringtipado from './../../components/lista03/CardArrayStringtipado';
 import Footer from '../../components/lista03/Footer';
+import { CardAlunoNotaJunto } from '@/components/lista03/CardAlunoNotaJunto';
 
 
 export default function Lista1() {
@@ -68,6 +72,16 @@ export default function Lista1() {
 
               <CardTurmaArry />
 
+              <CardUniaoLiterais status="Aprovado" />
+
+              <CardPropUnion cor={"vermelho"}/>
+
+              <CardArrayStringtipado/>
+
+              <CardAlunoNotaJunto
+              nome={'Daniel'}
+              nota={10}
+              />
             </section>
           </div>
         </div>
