@@ -1,16 +1,17 @@
-export default function CardChi ({ children }) {
-    return (
-        <div className=" 
-        w-4/21 
-        m-8
-        px-1 py-1 p-4 
-        flex justify-center
-        bg-orange-600 
-        text-white
-        text-center 
-        rounded-lg 
-        shadow-md">
-            {children}
-        </div>
-    );
+export default function PainelCVhildrenProp({ titulo, children }: { titulo: string; children: React.ReactNode }) {
+  return (
+    <div className="
+ w-45
+      m-5
+      bg-fuchsia-500
+      rounded-3xl
+      px-1 py-1
+      text-center
+      shadow-lg">
+      <h3 className="text-xl font-bold text-amber-50 mb-2">{titulo}</h3>
+      {children}
+    </div>
+  );
 }
+
+

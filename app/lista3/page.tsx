@@ -13,17 +13,23 @@ import CardTurmaArry from '@/components/lista03/CardTurmaArry';
 import CardUniaoLiterais from '@/components/lista03/CardUniaoLiterais';
 import CardPropUnion from '@/components/lista03/CardPropUnion';
 import CardArrayStringtipado from './../../components/lista03/CardArrayStringtipado';
-import Footer from '../../components/lista03/Footer';
 import { CardAlunoNotaJunto } from '@/components/lista03/CardAlunoNotaJunto';
+import PainelCVhildrenProp from '@/components/lista03/CardPainelChildrenProp';
+import CardAlunoCompleto from '@/components/lista03/CardAlunoCompleto';
+import CardListaTipadaTurrma from './../../components/lista03/CardLIstaTipadaAlunos';
+import Footer from '../../components/lista03/Footer';
 
 
-export default function Lista1() {
+export default function Lista3() {
 
   const aluno = {
     id: 1,
     nome: "Daniel",
-    curso: "Objeto"
+    curso: "Objeto",
+    nota: 9.5
   };
+
+  
 
 
   return (
@@ -80,8 +86,16 @@ export default function Lista1() {
 
               <CardAlunoNotaJunto
               nome={'Daniel'}
-              nota={10}
-              />
+              nota={10}/>
+
+              <PainelCVhildrenProp titulo={'Painel com children'}>
+                <p>Este é um painel com children.</p>
+              </PainelCVhildrenProp>
+
+              <CardAlunoCompleto {...aluno}/>
+
+              <CardListaTipadaTurrma/>
+
             </section>
           </div>
         </div>
